@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trinkgelgrechner</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <section>
+        <h1>Give me Money</h1>
+        <form onsubmit="rechnen(); return false">
+          <label for="betrag">Rechnungsbetrag:</label>
+          <input type="text" id="betrag">
+          <label for="anzahl">Personenanzahl:</label>
+          <input type="number" id="anzahl">
+          <label for="qualitaet">Wie war de Service:</label>
+          <select  id="qualitaet">
+            <option value="okey">Schlechter Service</option>
+            <option value="gut">Mittlerer Service</option>
+            <option value="super">Super Service</option>
+          </select>
+          <input type="submit" value="Berechne">
+        </form>
+        <p id="trinkgeld"></p>
+        <p id="summe"></p>
+        <p id="einzeln"></p>
+      </section>
+    </div>
+    
+    
+    
+    <script src="./assets/js/main.js" type="text/javascript"></script>
+  </body>
+</html>
